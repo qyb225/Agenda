@@ -1,6 +1,9 @@
 # Agenda
 
-2017 中山大学初级实训agenda，含基础部分cpp代码和web拓展部分。
+2017 中山大学初级实训agenda。
+
+* **cpp**: 阶段一二基础代码，运用c++11标准。
+* **web**: 阶段三拓展部分，web应用扩展，后端Django，前端Bootstrap + jQuery。
 
 ----
 
