@@ -2,8 +2,8 @@
 
 2017 中山大学初级实训agenda。
 
-* **cpp**: 阶段一二基础代码，运用c++11标准。
-* **web**: 阶段三拓展部分，web应用扩展，后端Django，前端Bootstrap + jQuery。
+* **cpp**： 阶段一二基础代码，c++11标准。
+* **web**： 阶段三拓展部分，web应用扩展，后端Django，前端Bootstrap + jQuery。数据库splite，md5加密技术。
 
 ----
 
@@ -25,3 +25,16 @@ Python3.5 + Django v1.11.1 + web浏览器
 **python manage.py runserver**
 
 打开浏览器输入url即可
+**http://127.0.0.1:8000/**
+
+**登录界面**：
+
+![login page](./image/login.png)
+
+**所有user**：（感谢注册账号的陌生sysu小伙伴们）
+
+![user page](./image/user.png)
+
+**会议详情**：
+
+![meeting page](./image/meeting.png)
