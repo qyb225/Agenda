@@ -1,6 +1,7 @@
 window.onload = function() {
     startTime = "2017-02-25/10:00";
     endTime = "2017-02-25/11:00";
+    $("#createBtn").attr("disabled","true");
     $("#title").blur(function () {
         var titleObj = $(this);
         var re = /^\w+$/;
@@ -32,6 +33,7 @@ window.onload = function() {
             showCorrect(parent);
         }
         else {
+            $("#createBtn").attr("disabled","true");
             showError(parent);
         }
     });
@@ -42,8 +44,10 @@ window.onload = function() {
         var parent = etObj.parents(".form-group");
         if (checkDate()) {
             showCorrect(parent);
+            $("#createBtn").removeAttr("disabled");
         }
         else {
+            $("#createBtn").attr("disabled","true");
             showError(parent);
         }
     });
@@ -62,7 +66,8 @@ function showTitleStatus() {
             }
             else {
                 titleObj.attr("complete", "false");
-                showError(parent);   
+                showError(parent);
+                $("#createBtn").attr("disabled","true");
             }
         }
     }
