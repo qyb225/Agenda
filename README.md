@@ -21,7 +21,7 @@ g++-4.8
 
 Python3.5 + Django v1.11.1 + web浏览器
 
-进入 code/，输入命令：
+进入 ./web/，输入命令：
 **python manage.py runserver**
 
 打开浏览器输入url即可
