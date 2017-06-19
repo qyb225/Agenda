@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda</title>
+    <meta charset="utf-8" />
+    {% load staticfiles %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/register.css' %}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+</head>
+<body>
+    <div class="container">
+    <div class="panel panel-default col-sm-5" id="panel">
+    <div class="panel-head">
+        <h1>Rubbish Agenda!</h1>
+    </div>
+    <div class="panel-body">
+        <form role="form" class="form-horizontal" method="post">
+            {% csrf_token %}
+            <fieldset>
+            <div class="form-group has-feedback">
+                <label for="username" class="control-label col-sm-3">Username:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="password" class="control-label col-sm-3">Password:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="passwordAgain" class="control-label col-sm-3">Again:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" name="passwordAgain" id="passwordAgain" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="telephone" class="control-label col-sm-3">Telephone:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="email" class="control-label col-sm-3">E-mail:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="row">
+                <label><input type="checkbox"></input> 同意 Agenda 协议</label>
+            </div>
+            <div class="row">
+                <a href="/login/" id="login" class="pull-right">Back To Login</a>
+            </div>
+            <div class="row">
+                <button id="regBtn" class="btn btn-primary col-sm-12" type="submit">Register</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    {% load staticfiles %}
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/utils.js' %}"></script>
+    <script src="{% static 'js/registerUser.js' %}"></script>
+</body>
+</html>

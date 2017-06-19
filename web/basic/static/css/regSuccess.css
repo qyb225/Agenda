@@ -1,0 +1,21 @@
+body {
+    background: url(../images/background.png);
+}
+
+h1 {
+    color: rgba(220, 220, 220, 1);
+}
+
+h2 {
+    color: rgb(70, 70, 70);
+}
+
+a {
+    color: green;
+}
+
+#panel {
+    margin-top: 7%;
+    background: rgba(120, 120, 120, 0.5);
+    border-color: rgba(0, 0, 0, 0);
+}

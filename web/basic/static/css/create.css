@@ -1,0 +1,14 @@
+#panel {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+    margin-bottom: 5%;
+}
+
+label {
+    color: white;
+}

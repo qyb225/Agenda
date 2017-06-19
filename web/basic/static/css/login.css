@@ -1,0 +1,20 @@
+body {
+    background: url(../images/background.png);
+}
+
+h1 {
+    color: rgba(220, 220, 220, 1);
+}
+
+#register {
+    margin-bottom: 10px;
+    margin-right: 3px;
+    color: rgba(230, 230, 230, 1);
+}
+
+#panel {
+    margin-top: 7%;
+    background: rgba(120, 120, 120, 0.5);
+    border-color: rgba(0, 0, 0, 0);
+}
+

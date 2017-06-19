@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+{% load staticfiles %}
+<link href="{% static 'css/modifyMeeting.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="col-sm-5">{{ meeting.title }}</h1>
+        <h2 class="col-sm-2">Participator</h2>
+        <div class="col-sm-4" id="addPart">
+            <input type="text" placeholder="Add participator" id="partAdder">
+            <button class="btn btn-default" id="partAdderBtn">+</button>
+            <span id="addFeedback"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5" id="meetingInfo">
+            <div class="row">
+                <p class="col-sm-4">Sponsor:</p>
+                <p class="col-sm-8">{{ meeting.sponsor }}</p>
+            </div>
+            <div class="row">
+                <p class="col-sm-4">Start Time:</p>
+                <p class="col-sm-8">{{ meeting.startDate }}</p>
+            </div>
+            <div class="row">
+                <p class="col-sm-4">End Time:</p>
+                <p class="col-sm-8">{{ meeting.endDate }}</p>
+            </div>
+        </div>
+        <div class="col-sm-6" id="participator">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Telephone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for part in Parts %}
+                        <tr>
+                            <td><span class="glyphicon glyphicon-user"></span> {{ part.username }}</td>
+                            <td>{{ part.telephone }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" id="delete">
+        <a class="btn btn-danger col-sm-2" id="deleteBtn" href="">Delete Meeting</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% load staticfiles %}
+<script src="{% static 'js/utils.js' %}"></script>
+<script src="{% static 'js/modifyMeeting.js' %}"></script>
+{% endblock %}

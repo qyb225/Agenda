@@ -1,0 +1,15 @@
+#userList {
+    color: white;
+    font-size: large;
+    min-height: 400px;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+
+#pageInation {
+    background-color: rgba(0, 0, 0, 0);
+}

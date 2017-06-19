@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block styles %}
+{% load staticfiles %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<h1>All Meetings</h1>
+<div id="meetingList">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Sponsor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for meeting in Meetings %}
+                <tr>
+                    <td><a href="/meetings/{{ meeting.title }}/">{{ meeting.title }}</a></td>
+                    <td>{{ meeting.startDate }}</td>
+                    <td>{{ meeting.endDate }}</td>
+                    <td><span class="glyphicon glyphicon-user"></span>  {{ meeting.sponsor }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

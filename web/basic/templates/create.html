@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+{% load staticfiles %}
+<link href="{% static 'css/create.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Create Meeting!</h1>
+    <div class="col-sm-6 col-sm-offset-2">
+        <form role="form" class="form-horizontal" method="post">
+            {% csrf_token %}
+            <fieldset>
+            <div class="form-group has-feedback">
+                <label for="title" class="control-label col-sm-3">Title:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="StartTime" class="control-label col-sm-3">Start Time:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="StartTime" id="StartTime" placeholder="yyyy-MM-dd/HH:mm" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="EndTime" class="control-label col-sm-3">End Time:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="EndTime" id="EndTime" placeholder="yyyy-MM-dd/HH:mm" />
+                    <span class="glyphicon form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="row">
+                <button id="regBtn" class="btn btn-primary col-sm-3 col-sm-offset-9" type="submit">Create</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% load staticfiles %}
+<script src="{% static 'js/utils.js' %}"></script>
+<script src="{% static 'js/createMeeting.js' %}"></script>
+{% endblock %}

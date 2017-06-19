@@ -1,0 +1,40 @@
+#meetingInfo {
+    color: white;
+    font-size: x-large;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    padding-top: 1%;
+    color: white;
+    font-size: 220%;
+}
+
+#participator {
+    color: white;
+    font-size: large;
+}
+
+#addPart {
+    margin-top: 3%;
+    margin-left: 5.5%;
+}
+
+#partAdder {
+    height: 33px;
+    padding: 5px;
+}
+
+#delete {
+    margin-top: 50px;
+}
+
+#addFeedback {
+    color: rgba(200, 50, 50, 1);
+    font-size: larger;
+}

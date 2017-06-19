@@ -1,0 +1,19 @@
+#meetingList {
+    color: white;
+    font-size: large;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+
+a {
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(180, 180, 180);
+}

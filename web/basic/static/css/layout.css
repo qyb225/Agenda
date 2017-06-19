@@ -1,0 +1,50 @@
+body {
+    background: url(../images/background.png);
+}
+
+
+#myNav {
+    background: rgba(50, 50, 50, 0.95);
+    border-width: 0px;
+}
+
+#myNav a {
+    color: white;
+}
+
+#myNav a:visited, #myNav a:active, #myNav a:hover {
+    background: rgba(50, 50, 50, 1);
+}
+
+#mainWindow {
+    background: rgba(80, 80, 80, 0.9);
+    border-width: 0px;
+    min-height: 620px;
+}
+
+#userInfo {
+    background: rgba(50, 50, 50, 0.9);
+    border-width: 0px;
+}
+
+#func {
+    border-width: 0px;
+    padding-left: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#leftBlock {
+    background: rgba(30, 30, 30, 0.9);
+    min-height: 620px;
+}
+
+#func a {
+    color: white;
+    border-width: 0px;
+}
+
+
+#func a:visited, #func a:active, #func a:hover {
+    background: rgba(30, 30, 30, 1);
+}

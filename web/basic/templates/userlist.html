@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Telephone</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in Users %}
+            <tr>
+                <td><span class="glyphicon glyphicon-user"></span>  {{ user.username }}</td>
+                <td>{{ user.telephone }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
