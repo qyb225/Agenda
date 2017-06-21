@@ -3,7 +3,7 @@
 2017 中山大学初级实训agenda。
 
 * **cpp**： 阶段一二基础代码，c++11标准。
-* **web**： 阶段三拓展部分，web应用扩展，后端Django，前端Bootstrap + jQuery。数据库splite，md5加密技术。
+* **web**： 阶段三拓展部分，选择web应用扩展。后端Django，前端Bootstrap + jQuery。数据库Sqlite，密码存储加密采用md5算法。
 
 ----
 
@@ -11,7 +11,7 @@
 
 ### 1. cpp：
 
-g++-4.8
+g++-4.8 -std=c++11
 
 进入cpp目录linux终端输入make即可，清除编译后的文件输入make clean
 
