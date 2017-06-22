@@ -35,6 +35,6 @@ build/User.o: src/User.cpp include/User.hpp
 	$(cc) $(FLAGS) -I ./include ./src/User.cpp -c -o ./build/User.o
 
 clean:
-	@rm -rf  $(LOCAL) ./bin
-	@rm -rf  $(LOCAL) ./build
-	@rm -rf  $(LOCAL) ./data
+	@rm -rf ./bin
+	@rm -rf ./build
+	@rm -rf ./data
