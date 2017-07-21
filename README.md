@@ -31,7 +31,7 @@ Python3.5 + Django v1.11.1 + web浏览器
 
 ![login page](./image/login.png)
 
-**所有user**：（感谢注册账号的陌生sysu小伙伴们）
+**所有user**：
 
 ![user page](./image/user.png)
 
